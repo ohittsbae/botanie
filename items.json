@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Pencil",
+    "description": "a regular but useful pencil.",
+    "id": "pencil",
+    "cost": 50
+  },
+
+  {
+    "name": "item/nul",
+    "description": "an object who's exact properties are unknown. makes a great reading light, though.",
+    "id": "nul",
+    "cost": 5000
+  },
+
+  {
+    "name": "Golden Idol",
+    "description": "a small golden idol. not very useful except to flex wealth.",
+    "id": "idol",
+    "cost": 1000
+  },
+
+  {
+    "name": "Digitizer",
+    "description": "an extremely useful device for those who like to play videogames.",
+    "id": "digital",
+    "cost": 100
+  },
+  
+    {
+    "name": "Cold Spaghetti",
+    "description": "bum bap bap bum duh duh duh doo bwap",
+    "id": "cold",
+    "cost": 50
+  }
+]

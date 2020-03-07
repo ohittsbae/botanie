@@ -1,0 +1,30 @@
+client.on("ready", () => {
+  console.log(
+    `Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`
+  );
+    client.user.setActivity(`to the sound of the rain`, { type: 'LISTENING' });
+});
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+client.on('message', message => {
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+	const args = message.content.slice(prefix.length).split(/ +/);
+	const command = args.shift().toLowerCase();
+    
+    if(command === 'flower') {
+       const flowersEmbed = {
+       color: 0xa382a3,
+       title: `you were given a flower!`,
+       image: {
+         url: flowers[Math.floor(Math.random() * flowers.length)]
+       }
+    }
+      message.delete()
+      message.channel.send({embed : flowersEmbed});
+      
+    }
+});
